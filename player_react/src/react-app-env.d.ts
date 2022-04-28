@@ -22,7 +22,7 @@ type SoyPlayerDispatch = (action: SoyPlayerAction, payload: any) => any;
 type SoyPlayerDestroy = () => void;
 
 type SoyPlayerCallback = {
-  [key in ICallbackKey]: CallableFunction | undefined;
+  [key in SoyPlayerCallbackKey]: CallableFunction | undefined;
 };
 
 type SoyPlayerCallbackKey =
